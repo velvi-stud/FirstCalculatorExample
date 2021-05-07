@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Calcolatrice</title>
+
+    <link rel = "stylesheet" href = "calc.css">
+
+    <script src="calc.js"></script>
+
+</head>
+
+<body class="fullscreen" onload="calc_init()">
+
+    <div class="container">
+        <h1 class="title">Calculator</h1>
+    </div>
+
+    <div id="calculator_container">
+
+        <div id="display_container" class="row">
+            <div class="block">
+                <span id="display_press">0</span>
+            </div>
+            <div class="block">
+                <input type="button" id="clear" name="clear" value=" C " onclick="calc_keyClearPressed()">
+            </div>
+        </div>
+
+        <div id="keyboard_container">
+
+            <div class="row">
+                <div class="block">   <input type="button" name="one" value=" 1 " onclick="calc_keyNumPressed(1)"> </div>
+                <div class="block">   <input type="button" name="two" value=" 2 " onclick="calc_keyNumPressed(2)"> </div>
+                <div class="block">   <input type="button" name="three" value=" 3 " onclick="calc_keyNumPressed(3)"> </div>
+                <div class="block">   <input type="button" class="operator" name="plus" value=" + " onclick="calc_keyOperatorPressed('+')"> </div>
+            </div>
+
+            <div class="row">
+                  <div class="block">  <input type="button" name="four" value=" 4 " onclick="calc_keyNumPressed(4)"></div>
+                  <div class="block">  <input type="button" name="five" value=" 5 " onclick="calc_keyNumPressed(5)"></div>
+                  <div class="block">  <input type="button" name="six" value=" 6 " onclick="calc_keyNumPressed(6)"></div>
+                  <div class="block">  <input type="button" class="operator" name="minus" value=" - " onclick="calc_keyOperatorPressed('-')"></div>
+            </div>
+
+            <div class="row">
+                 <div class="block">   <input type="button" name="seven" value=" 7 " onclick="calc_keyNumPressed(7)"></div>
+                 <div class="block">   <input type="button" name="eight" value=" 8 " onclick="calc_keyNumPressed(8)"></div>
+                 <div class="block">   <input type="button" name="nine" value=" 9 " onclick="calc_keyNumPressed(9)"></div>
+                 <div class="block">   <input type="button" class="operator" name="times" value=" x " onclick="calc_keyOperatorPressed('*')"></div>
+            </div>
+
+            <div class="row">
+                  <div class="block">  <input type="button" name="zero" value=" 0 " onclick="calc_keyNumPressed(0)"></div>
+                  <div class="block">  <input type="button" id="dot" name="dot" value=" . " onclick="calc_keyDotPressed()"></div>
+                  <div class="block">  <input type="button" id="resolve" name="doit" value=" = " onclick="calc_keyCalcPressed()"></div>
+                  <div class="block">  <input type="button" class="operator" name="div" value=" / " onclick="calc_keyOperatorPressed('/')"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

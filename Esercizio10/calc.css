@@ -1,0 +1,84 @@
+body{
+	text-align: center;
+}
+.fullscreen {
+    display: compact;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* per l'intero profilo della calcolatrice*/
+#calculator_container{
+    background-color: #334d4d;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    border-radius: 20px;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+/* per tutti i bottoni */
+input{
+    text-align: center;
+    background-color: #FFFFFF;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+    font-size: x-large;
+}
+
+/* per il display, ove appare l'input/risultato e il pulsante cancella */
+#display_container{
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 20px;
+}
+
+#keyboard_container{
+    text-align: center;
+}
+
+/* costrutti base per far apparire div innsetati in orizzontale */
+.row{
+    width: 100%;
+    text-align: center; /* center the content of the container */
+}
+.block {
+    width: 10vm;
+    display: inline-block; /* display inline with ability to provide width/height */
+}
+
+/* dovie viene visualizzato l'imput/risultato */
+span{
+    background-color: #FFFFFF;
+    text-align: right;
+    overflow: hidden;
+    width: 6em;
+    display: grid;
+    font-size: x-large;
+}
+
+/* per il pulsante cancella */
+#clear{
+    margin-left: 20px;
+}
+
+/* per i pulsanti che rappresentano gli operatori */
+.operator{
+    text-align: center;
+    background-color: darkgoldenrod;
+    color:white;
+}
+
+/* particolarità per il pulsante "=" */
+#resolve{
+    background-color: crimson;
+    color:white;
+}
